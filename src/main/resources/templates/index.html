@@ -1,0 +1,452 @@
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<!--<![endif]-->
+<!DOCTYPE html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>BmD</title>
+    <meta name="description" content="This is a show , where we make you a star. Its a show to challenge yourself and push your limits. This show is strictly not for kids. No more standing in the Audition queue , You can participate in this show by registering yourself online. If Selected ,We will invite you in Mumbai to perform various strength related tasks and there will be other contestants too, who will challenge you.">
+    <meta name="author" content="">
+    <meta property="og:url"           content="https://www.bummeindum.com" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Bum mein Dum" />
+    <meta property="og:description"   content="This is a show , where we make you a star. Its a show to challenge yourself and push your limits. This show is strictly not for kids. No more standing in the Audition queue , You can participate in this show by registering yourself online. If Selected ,We will invite you in Mumbai to perform various strength related tasks and there will be other contestants too, who will challenge you." />
+    <meta property="og:image:secure_url"         content="https://www.bummeindum.com/images/1.jpg" />
+    <meta property="og:image:type" content="image/jpeg" /> 
+	<meta property="og:image:width" content="512" /> 
+	<meta property="og:image:height" content="512" />
+    <!-- <meta property="fb:app_id" content="966242223397117" /> -->
+    <!--  Google Analyics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130175391-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130175391-1');
+</script>
+    
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" th:href="@{/css/base.css}">
+    <link rel="stylesheet" th:href="@{/css/vendor.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+
+    <!-- script
+    ================================================== -->
+    <script th:src="@{/js/modernizr.js}"></script>
+    <script th:src="@{/js/pace.min.js}"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript">
+    
+    				function showtermsAndCondtion(){
+    					
+    					var x = document.getElementById("termsAndCondition");
+    				    if (x.style.display === "none") {
+    				        x.style.display = "block";
+    				    } else {
+    				        x.style.display = "none";
+    				    }
+    				}
+    
+					function codeAddress() {
+
+						//var test = ${successMessage};
+						//alert('ok' + window.location.pathname);
+						document.getElementById("termsAndCondition").style.display = 'none';
+						if (window.location.pathname == '/registration') {
+							var elmnt = document.getElementById("contact");
+							elmnt.scrollIntoView();
+						}
+
+					}
+					window.onload = codeAddress;
+					
+	</script>
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+		<!--
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo1----.png" alt="Homepage">
+            </a>
+        </div>
+		-->
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="register">Register</a></li>
+                </ul>
+                
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.facebook.com/BUM-MEIN-DUM-2132807220097947/"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/bummeindum?utm_source=ig_profile_share&igshid=fdnwstekinuy"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCIyouKm-sOCl2NRuHWXKDFA"><i class="fa fa-youtube"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" th:data-image-src="@{/images/banner.gif}" data-position-y=center>
+
+		
+		
+        <!-- <video autoplay="autoplay" loop="loop" >
+		<source th:src="@{/images/RENDER.mp4}" type="video/mp4" />
+		</video> -->
+		
+        
+        <ul class="home-social">
+            <li>
+                <a href="https://www.facebook.com/BUM-MEIN-DUM-2132807220097947/"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://instagram.com/bummeindum?utm_source=ig_profile_share&igshid=fdnwstekinuy"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCIyouKm-sOCl2NRuHWXKDFA"><i class="fa fa-youtube" aria-hidden="true"></i><span>YouTube</span></a>
+            </li>
+            
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Hello There</h3>
+                <h1 class="display-1 display-1--light">We Are BmD</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                This is a show , where we make you a star. Its a show to challenge yourself and push your limits.
+				This show is strictly not for kids.</br>
+				No more standing in the Audition queue , You can participate in this show by registering yourself online <a href="#contact">here</a>,
+				If Selected ,We will invite you in Mumbai to perform various strength related tasks and there will be other contestants too, who will challenge you.</br>
+				So if u think you are strong enough to take the challenge, then we are waiting for you.... 
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+        
+
+        <!--<div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">127</div>
+                <h5>Users Played</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">1505</div>
+                <h5>Users Registered</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">109</div>
+                <h5>Users Win</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">102</div>
+                <h5>Users Watched</h5> 
+            </div>
+
+        </div>--> <!-- end about-stats -->
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Us</h3>
+                <h1 class="display-2 display-2--light">Register yourself to get a chance to show your strenght with US</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+                <h3 class="h6">Register</h3>
+                
+                <div class="alert-box alert-box--error hideit"
+						th:if="${successMessage != null}" id="successMessage">
+					<p th:utext="${successMessage}"></p> <i
+							class="fa fa-times alert-box__close" aria-hidden="true"></i>
+					</div>
+				
+                <form  method="post" action="#" th:action="@{/registration}" th:object="${user}" role="form" id="registrationForm">
+					
+					<fieldset>
+					<div class="alert-box alert-box--error hideit" th:if="${#fields.hasErrors('name') or #fields.hasErrors('email') or #fields.hasErrors('dob') or #fields.hasErrors('profession') or #fields.hasErrors('bloodGroup') or #fields.hasErrors('address') or #fields.hasErrors('about')}" id="successMessage">
+						<label th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="validation-message"></label> 
+						<label th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="validation-message"></label>
+						<label th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}" class="validation-message"></label>
+						<label th:if="${#fields.hasErrors('profession')}" th:errors="*{profession}" class="validation-message"></label>
+						<label th:if="${#fields.hasErrors('bloodGroup')}" th:errors="*{bloodGroup}" class="validation-message"></label>
+						<label th:if="${#fields.hasErrors('address')}" th:errors="*{address}" class="validation-message"></label>
+						<label th:if="${#fields.hasErrors('about')}" th:errors="*{about}" class="validation-message"></label>
+						<label th:if="${#fields.hasErrors('mobileno')}" th:errors="*{mobileno}" class="validation-message"></label>
+						<i	class="fa fa-times alert-box__close" aria-hidden="true"></i>
+					</div>
+    
+                    <div class="form-field">
+                        <input name="name" th:field="*{name}" type="text" id="name" placeholder="Your Name" value="" maxlength="20" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    
+                    <div>
+                        <input name="email" th:field="*{email}" type="email" id="email" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="mobileno" th:field="*{mobileno}" type="tel" id="mobileno" placeholder="Mobile No"  pattern="^\d{10}$" value=""  required="" aria-required="true" class="full-width">
+                    </div>
+					<div class="form-field">
+                       <input name="dob" placeholder="Date Of Birth" th:field="*{dob}" class=class="full-width" type="text" onfocus="(this.type='date')"  onblur="(this.type='text')" id="date">
+                    </div>
+                                                           
+                    <div class="form-field">
+                        <input name="Profession" type="text" th:field="*{profession}" id="Profession" placeholder="Profession" value="" class="full-width">
+                    </div>
+					<div class="form-field">
+                        <input name="bloodGroup" type="text" th:field="*{bloodGroup}" id="bloodGroup" placeholder="Blood Group" value="" class="full-width">
+                    </div>
+					<div class="form-field">
+                        <input name="address" id="address" th:field="*{address}" type="text" placeholder="Address" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <textarea name="aboutYourself" th:field="*{about}" id="aboutYourself" placeholder="Tell Us About Yourself" rows="3" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                    	<p><input type="checkbox" required name="terms"> I accept the <a href="javascript:showtermsAndCondtion();">Terms and Conditions</a></p>
+                    </div>
+						<div class="form-field" id="termsAndCondition">
+							<div class="alert-box alert-box--info hideit">
+								<ul> <li>Team BMD will decide the selection of any contestant.</li>
+									 <li>All the contestants should be 18+, Age proof will be required before the contest.</li>
+									 <li>The applicant must carry 2 passport size photographs.</li>
+									 <li>All the rights including but not limited to the intellectual property rights, copyrights and all other
+allied, ancillary and subsidiary rights in any and all media in and to the photographs, tapes,
+movies and recordings of everything the applicant say and do during the Contest, Post Contest
+Shoot, Promotional Activity and/or otherwise related to the Contest shall vest with BMD
+absolutely for perpetuity, throughout the world.</li>
+									 
+								
+								</ul>
+								<i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+							</div>
+						</div>
+
+						<div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning, this is breaking our page
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div> 
+             	-->
+             	
+             	
+                <!-- contact-success 
+                <div class="message-success">
+                    <br>
+                </div>
+			-->
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+                    <div class="cinfo">
+                        <h5>Email Us At</h5>
+                        <p>
+                            For Contestants Query: bmd.contestant@gmail.com<br>
+                            For Business/Promotion: bmd.commercials@gmail.com<br>
+                            
+                        </p>
+                    </div>
+                  
+
+                    <ul class="contact-social">
+                        <li>
+                            <a href="https://www.facebook.com/BUM-MEIN-DUM-2132807220097947/"><i class="fa fa-facebook-square fa-2x"  aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/bummeindum?utm_source=ig_profile_share&igshid=fdnwstekinuy"><i class="fa fa-instagram fa-2x"  aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCIyouKm-sOCl2NRuHWXKDFA"><i class="fa fa-youtube fa-2x"  aria-hidden="true"></i></a>
+                        </li>
+                        
+                    </ul> <!-- end contact-social -->
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Glint 2017</span> 
+                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script th:src="@{js/jquery-3.2.1.min.js}"></script>
+    <script th:src="@{js/plugins.js}"></script>
+    <script th:src="@{js/main.js}"></script>
+
+</body>
+
+</html>

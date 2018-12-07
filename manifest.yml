@@ -1,0 +1,5 @@
+---
+applications:
+  - name: springapp
+    buildpack: java_buildpack
+    path: target/login-0.0.1-SNAPSHOT.jar
